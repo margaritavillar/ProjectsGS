@@ -50,7 +50,7 @@ class CurrencyConverterView{
         $html = '<form action="?action=convert" method="post">'
             . '<input name="currency" type="hidden" value="'.$this->currency.'">'
             . '<label>' .$this->currency. ': </label>'
-            . '<input name = "amount" type="text" value ="'.$this->converter->get($this->currency).'">'
+            . '<input name = "amount" type="text" value =" This is a test'.$this->converter->get($this->currency).'">'//Juan added a comment
             . '<input type="submit" value="Convert">'
             . '</form>';
         return $html;
